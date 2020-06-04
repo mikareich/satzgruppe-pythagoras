@@ -1,0 +1,126 @@
+:root {
+  --indent: 30px;
+  --top-space-section: 60px;
+
+  --nav-height: 54px;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  color: var(--nord3);
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 54px;
+  padding: 10px var(--indent);
+  background-color: var(--nord0);
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 2 * var(--indent));
+  z-index: 2;
+}
+
+nav .scrollbar-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 5px;
+  background-color: var(--nord4);
+  left: 0;
+}
+
+.scrollbar {
+  width: var(--progress);
+  height: 100%;
+  background-color: var(--nord3);
+}
+
+nav .nav__link {
+  text-decoration: none;
+  font-family: unset;
+  text-transform: capitalize;
+  font-size: small15pxer;
+  margin-left: 30px;
+  font-size: 15px;
+  transition: 200ms;
+  color: var(--nord6);
+}
+
+main {
+  scroll-snap-type: y mandatory;
+}
+
+nav .nav__title {
+  font-size: 18px;
+  margin-right: auto;
+  margin-left: 0px;
+  text-transform: none;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 800px;
+  height: 100vh;
+  min-height: 300px;
+}
+
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+section .text {
+  max-width: 50%;
+  width: 400px;
+  font-size: 18px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  color: var(--nord2);
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+p {
+  line-height: 2;
+}
+
+section .media {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9e9e94d;
+  border-radius: 10px;
+}
+
+/* custom */
+
+#satz_des_pythagoras {
+  background-color: var(--nord7);
+}
+
+#hoehensatz_des_euklid {
+  background-color: var(--nord14);
+}
+
+#kathetensatz_des_euklid {
+  background-color: var(--nord13);
+}
+
+#rechner {
+  background-color: var(--nord12);
+}

@@ -1,0 +1,1 @@
+  06.06.20 14:59:32 MESZ: Komposition 'tempConverterComp' gestartet.  Sichern unter: /private/var/folders/r5/d5yhq6_13cv23x452lf03wh40000gn/T/TemporaryItems/Bodymovin/lboht6jyrn/raw/images/img_0.png    06.06.20 14:59:32 MESZ: Komposition 'tempConverterComp' beendet.  Bish. Renderz.: 0 SekundenDas Protokoll wurde am 06.06.20 um 14:59:32 MESZ geschlossen.

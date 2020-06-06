@@ -15,17 +15,6 @@ function updateScrollbar() {
     document.body.scrollTop || document.documentElement.scrollTop;
   const height = document.body.scrollHeight - document.body.clientHeight;
   const scrolled = (winScroll / height) * 100;
-  // get current element
-  const currentSection = sections.find((section) => {
-    if (
-      winScroll <= section.clientHeight + document.body.clientHeight &&
-      winScroll >= section.clientHeight
-    ) {
-      return section;
-    }
-  });
-  // update link
-  console.log(links[sections.indexOf(currentSection)]);
   // display progress
   scrollbar.style.cssText = `--progress: ${scrolled}%`;
 }
